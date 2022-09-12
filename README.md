@@ -1,23 +1,17 @@
-# Lobby
+# Host Creates a Lobby
 
-[User]'s Lobby: [Group]
+* Run the Lobby application, e.g.
 
-* `User` is your user name
-* `Group` is your lobby's group name
-
-Specify `user` and `group` on the URL
-* `.../?group=Lab&user=Scott` creates  _Scott's Lobby: Lab_
-
+  [https://arcsjs.web.app/0.4.1/lobby/?group="Group"&user="User"](https://arcsjs.web.app/0.4.1/lobby/?group="Group"&user="User")
+* `Group` is the lobby's identifier
+* `User` is the host's identifier, is optional
 * Additional information can be found in the console.
 
-# Remote
+# Users Create Remotes
 
-* Run the remote application from
-  https://arcsjs.web.app/0.4.1/remote/
+* Run the remote application, e.g.
 
-* The `Group` to join is specified in the settings dialog opened via the Settings button in the right-top corner.
-* Enable (or disable) video by clicking the Camera button in the top-left corner.
-
-If the group names match the connections should auto negotiate and the remote video will appear in the Lobby.
-
-Note the remote app will receive no video-stream. The details of the implementation depend on the application, contact sjmiles@google.com.
+  [https://arcsjs.web.app/0.4.1/remote/?group="Group"&user="User"](https://arcsjs.web.app/0.4.1/remote/?group="Group"&user="User")
+* `Group` identifies the Lobby to join.
+* `User` identifier is optional (an id will be generated).
+* Enable/disable video by clicking the Camera button in the top-left corner.
